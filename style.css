@@ -2,23 +2,70 @@ body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
   text-align: center;
-  margin-top: 50px;
+  margin: 0;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
 }
+
 .container {
+  max-width: 400px;
+  margin: auto;
   background: white;
   padding: 20px;
-  margin: auto;
-  width: 300px;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.input-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+
 input {
-  width: 200px;
+  flex: 1;
   padding: 10px;
+  font-size: 16px;
 }
+
 button {
   padding: 10px;
+  margin-left: 5px;
+  cursor: pointer;
 }
-li {
+
+ul {
+  list-style: none;
+  padding: 0;
   text-align: left;
-  margin: 5px 0;
+}
+
+li {
+  background: #eee;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+li.done {
+  text-decoration: line-through;
+  background: #c8e6c9;
+}
+
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark .container {
+  background: #1e1e1e;
+}
+
+.dark li {
+  background: #333;
+}
+
+.dark li.done {
+  background: #2e7d32;
 }
